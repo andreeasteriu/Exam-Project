@@ -18,40 +18,31 @@ function closeNav() {
 
 let urlParams= new URLSearchParams(window.location.search);
 
-let id = urlParams.get("id");
-console.log("I want to get article: " + id);
+let categories = urlParams.get("categories");
+console.log("I want to get the category: " + categories);
 
-fetch("http://deckadev.com/wordpress/wp-json/wp/v2/shop/"+id)
+fetch("http://deckadev.com/wordpress/wp-json/wp/v2/shop?categories=" + categories)
 .then(e=>e.json())
-.then(showSinglePost)
+.then(showProductType)
 
 
-function fetchProducts(){
-  fetch("http://deckadev.com/wordpress/wp-json/wp/v2/shop?category=96")
-    .then(e => e.json())
-    .then(showMusic)
-}
 
-function showMusic(data){
+function showProductType(data){
     console.log(data);
-    data.forEach(showEvents)
+    data.forEach(showProduct)
 }
-function showEvents(anEvent){
-    console.log(anEvent);
+function showProduct(aProduct){
+    console.log(aProduct);
     let template = document.querySelector("#template").content;
     let clone = template.cloneNode(true);
- clone.querySelector(".more").href="subpage_music.html?id=" + anEvent.id;
- clone.querySelector(".name-event").textContent = anEvent.title.rendered;
- clone.querySelector(".day").textContent = anEvent.acf.date.substring(0,2) + "/";
-  clone.querySelector(".month").textContent = anEvent.acf.date.substring(2,4) + "/";
- clone.querySelector(".year").textContent = anEvent.acf.date.substring(4,8);
- clone.querySelector(".clock").textContent = anEvent.acf.time;
-    clone.querySelector(".img-post").src = anEvent.acf.image.sizes.medium;
+ clone.querySelector(".more").href="subpage_music.html?id=" + aProduct.id;
+ clone.querySelector(".name-product").textContent = aProduct.title.rendered;
+ clone.querySelector(".img-post").src = aProduct.acf.image.sizes.medium;
 
 
-    let eventsList = document.querySelector("#eventsList");
-    eventsList.appendChild(clone);
+    let category = document.querySelector("#category");
+    category.appendChild(clone);
 
 }
-fetchMusic();
+
 
