@@ -24,7 +24,7 @@ header {
 
 footer {
     background: rgba(67, 78, 72, 1);
-    background: linear-gradient(to bottom, rgba(67, 78, 72, 1) 0%, rgba(17, 20, 18, 1) 100%);
+
     height: 100px;
     position: fixed;
     bottom: 0;
@@ -100,7 +100,6 @@ footer {
 }
 
 .main-nav ul li {
-
     padding: .5em;
 }
 
@@ -115,6 +114,11 @@ footer {
 .down-arrow {
     display: none;
 }
+
+
+
+
+
 
 
 /****************** TABLET **************************/
@@ -138,8 +142,7 @@ footer {
 
 @media only screen and (min-width:50em) {
     header {
-        height: 85vh;
-        ;
+        height: 80vh;
         background-attachment: fixed;
 
     }
@@ -188,11 +191,121 @@ footer {
         margin: auto;
     }
 
+/***** PRODUCTS-TYPE *****/
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 8em;
+
+    padding-bottom: 2em;
+    grid-gap: 1em;
+    max-width: 1140px !important;
+    width: 100%;
+    min-height: 100%;
+      margin-right: auto;
+    margin-left: auto;
 
 
+}
+    .first {
+        grid-area: 1/ span 4;
+         grid-row: 1/ span 4;
+        background-image: url(assets/phone-case.jpg) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .second {
+        background-image: url(assets/flip-flops.jpg);
+        grid-area: 1/ span 4;
+        grid-row: 1/ span 2;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .third {
+      background-image: url(assets/pillows.jpg);
+       grid-area: 1/ span 4;
+        grid-row: 1/ span 3;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .fourth {
+        background-image: url(assets/prints.jpg);
+        grid-area: 5/ span 4;
+        grid-row: 3/ span 2;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .fifth {
+        background-image: url(assets/acrylic.png);
+        grid-area: 1/ span 8;
+        grid-row: 5/ span 2;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .sixth {
+        background-image: url(assets/swimwear.jpg);
+        grid-area: 9/ span 4;
+        grid-row: 4/ span 3;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .seventh {
+        background-image: url(assets/tote-bag.jpeg);
+        grid-area: 1/ span 4;
+        grid-row: 7/ span 3;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .eighth {
+           background-image: url(assets/t-shirts.jpg);
+        grid-area: 5/ span 4;
+        grid-row: 7/ span 3;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .ninth {
+       background-image: url(assets/wallpaper.png);
+        grid-area: 9/ span 4;
+        grid-row: 7/ span 3;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+.product {
+    background-color: lightgray;
+    transition: 0.25s ease-in-out;
 
 
+}
 
+.product:hover {
+
+    transition: 0.25s ease-in-out;
+
+    }
+
+.product-type {
+  background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+
+}
 
 
 
