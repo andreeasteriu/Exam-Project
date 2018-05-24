@@ -22,13 +22,7 @@ header {
 
 }
 
-footer {
-    background: rgba(67, 78, 72, 1);
 
-    height: 100px;
-    position: fixed;
-    bottom: 0;
-}
 
 /***** NAVIGATION ******/
 
@@ -118,7 +112,26 @@ footer {
 
 
 
+/******************* FOOTER ********************/
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    text-align: center;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.icon img {
+    width: 30px;
+    margin: 0;
 
+}
+.footer-contact {
+    display: none;
+}
 
 
 /****************** TABLET **************************/
@@ -134,6 +147,21 @@ footer {
     }
 
 
+
+
+
+    /******************* FOOTER ********************/
+
+    footer {
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+    .icon img {
+        width: 35px;
+    }
+    .footer-contact {
+        display: none;
+    }
 
 }
 
@@ -288,25 +316,57 @@ footer {
         background-repeat: no-repeat;
     }
 
-.product {
-    background-color: lightgray;
-    transition: 0.25s ease-in-out;
-
-
-}
-
-.product:hover {
-
-    transition: 0.25s ease-in-out;
-
+    .product {
+        background-color: lightgray;
+        transition: 0.25s ease-in-out;
     }
 
-.product-type {
-  background-color: rgba(0, 0, 0, 0.5);
-    padding: 0;
+    .product:hover {
+        transition: 0.25s ease-in-out;
+    }
 
-}
+    .product-type {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0;
+    }
 
 
 
+
+
+
+    /******************* FOOTER ********************/
+    footer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position:relative;
+        bottom: 0;
+        padding-left: 3em;
+        padding-right: 3em;
+
+    }
+    .icon img {
+        width: 40px;
+    }
+    .footer-contact {
+        display: block;
+        color: black;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+
+    }
+    .footer-contact p {
+        padding: 0;
+        margin: 0;
+
+    }
+    .footer-contact img {
+        width: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .tel {
+        margin-top: 10px;
+    }
 }
