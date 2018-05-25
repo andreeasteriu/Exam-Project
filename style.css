@@ -265,7 +265,7 @@ footer {
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
+
     }
 
     .third {
@@ -281,7 +281,7 @@ footer {
         background-image: url(assets/prints.jpg);
         grid-area: 5/ span 4;
         grid-row: 3/ span 2;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -343,6 +343,7 @@ footer {
     .product-type {
         background-color: rgba(0, 0, 0, 0.7);
         height: 100%;
+        position: relative;
 
 
     }
@@ -352,20 +353,9 @@ footer {
 
     }
 
-    .type-title {
-        margin: auto;
-        padding: 0;
-        text-align: center;
-        position: relative;
-        top: 50%;
-        font-size: 35px;
-        font-weight: bold;
-        text-transform: uppercase;
-        height: 100%;
-        color: #FFF;
-    }
 
-    .type-title-second {
+
+    .type-title {
         margin: 0;
         width: 100%;
         text-align: center;
