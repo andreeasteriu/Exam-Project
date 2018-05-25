@@ -17,16 +17,7 @@ a {
     color: black;
 }
 
-header {
-    display: block;
-    background-image: url(assets/);
-    background-size: cover;
-    height: 14.4em;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: grey;
 
-}
 
 .hide {
     display: none;
@@ -36,16 +27,29 @@ header {
     opacity: .5;
 }
 
-
+.head {
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px 0 10px;
+}
 /***** NAVIGATION ******/
 
 .burger-menu {
     font-size: 30px;
     cursor: pointer;
-    position: fixed;
+    margin-left: 10px;
+    color: #FFF;
+
+
+}
+header {
+    display: block;
+    position: static;
+    top: 0;
     z-index: 1;
-    top: 5px;
-    left: 9px;
+    background-color: #0A251E;
+    height: 40px;
+    width: 100%;
 }
 
 .main-nav {
@@ -123,13 +127,146 @@ header {
 }
 
 
+/***** PRODUCTS-TYPE *****/
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 8em;
+        padding-bottom: 2em;
+        grid-gap: .5em;
+        max-width: 600px !important;
+        width: 100%;
+        min-height: 100%;
+        margin-right: auto;
+        margin-left: auto;
 
 
+    }
+    .first {
+
+        background-image: url(assets/phone-case.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .second {
+        background-image: url(assets/flip-flops.jpg);
+
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .third {
+        background-image: url(assets/pillows.jpg);
+
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .fourth {
+        background-image: url(assets/prints.jpg);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .fifth {
+        background-image: url(assets/acrylic.png);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .sixth {
+        background-image: url(assets/swimwear.jpg);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .seventh {
+        background-image: url(assets/tote-bag.jpeg);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .eighth {
+        background-image: url(assets/t-shirts.jpg);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .ninth {
+        background-image: url(assets/wallpaper.png);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+.product {
+    position: relative;
+}
+.product-type {
+        background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+
+    }
+
+    .type-title {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+
+        text-transform: uppercase;
+        color: #FFF;
+    }
+
+.heading-title {
+    font-size: 27px;
+   text-transform: uppercase;
+    font-weight: 500;
+    margin: 15px 0;
+    text-align: center;
+
+
+
+}
+
+main {
+    margin: 0 10px 0 10px;
+}
+
+.top-text {
+    font-size: 27px;
+    font-weight: 300;
+
+    top: 3em;
+    margin: 0 10px;
+    text-align: center;
+
+}
 /******************* FOOTER ********************/
 
 footer {
     display: block;
-    position: absolute;
+    position: static;
     bottom: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -155,7 +292,7 @@ footer {
 @media only screen and (min-width: 30em) {
 
     header {
-        height: 40vh;
+
     }
 
     .open {
@@ -166,16 +303,13 @@ footer {
 
 
 
-    /******************* FOOTER ********************/
+    /******** FOOTER ********/
     footer {
         padding-left: 15em;
         padding-right: 15em;
     }
     .icon img {
         width: 35px;
-    }
-    .footer-contact {
-        display: none;
     }
 
 }
@@ -185,13 +319,22 @@ footer {
 
 @media only screen and (min-width:50em) {
     header {
+        display: block;
+    background-image: url(assets/city_1920x660.png.png);
+    background-size: cover;
         height: 80vh;
         background-attachment: fixed;
+        background-repeat: no-repeat;
+    background-position: top;
+    background-color: grey;
 
     }
 
+    .head {
+        display: none;
+    }
 
-    /************* NAVIGATION *************/
+    /********** NAVIGATION *********/
     label {
         display: none;
     }
@@ -231,6 +374,7 @@ footer {
     .down-arrow {
         display: block;
         margin: auto;
+        margin-bottom: 10em;
     }
 
     /***** PRODUCTS-TYPE *****/
@@ -238,7 +382,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-auto-rows: 8em;
-
+        margin-top: 5em;
         padding-bottom: 2em;
         grid-gap: 1em;
         max-width: 1140px !important;
@@ -349,11 +493,9 @@ footer {
     }
 
     .product-type:hover {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
 
     }
-
-
 
     .type-title {
         margin: 0;
@@ -368,8 +510,6 @@ footer {
         text-transform: uppercase;
         color: #FFF;
     }
-
-
 
 
 
