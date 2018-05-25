@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
 body {
     margin: 0;
     display: grid;
@@ -127,7 +130,7 @@ header {
 
 /******************* FOOTER ********************/
 
-footer {
+/*footer {
     display: block;
     position: absolute;
     bottom: 0;
@@ -137,18 +140,31 @@ footer {
     text-align: center;
     padding-left: 3em;
     padding-right: 3em;
-}
+}*/
 
-.icon img {
+footer {
+    position: absolute;
+    text-align: center;
+    background-color: #0A251E;
+    width: 100%;
+}
+.footer-icons {
+    display: inline-flex;
+    margin: auto;
+    text-align: center;
+
+}
+.footer-icons img {
     width: 30px;
-    margin: 0;
-
+    height: 30px;
+    margin: 20px;
 }
-
 .footer-contact {
     display: none;
 }
-
+.footer-info {
+    display: none;
+}
 
 /****************** TABLET **************************/
 
@@ -167,7 +183,7 @@ footer {
 
 
     /******************* FOOTER ********************/
-    footer {
+    /*footer {
         padding-left: 15em;
         padding-right: 15em;
     }
@@ -176,6 +192,11 @@ footer {
     }
     .footer-contact {
         display: none;
+    }*/
+
+    .footer-icons img {
+        width: 35px;
+        height: 35px;
     }
 
 }
@@ -374,37 +395,48 @@ footer {
 
 
     /******************* FOOTER ********************/
-    footer {
+
+
+    .footer {
+        text-align: left;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        position: relative;
-        bottom: 0;
-        padding-left: 3em;
-        padding-right: 3em;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100px;
 
     }
-    .icon img {
-        width: 40px;
-    }
+
     .footer-contact {
         display: block;
-        color: black;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10px;
-
+        color: white;
+        padding: 15px;
     }
     .footer-contact p {
         padding: 0;
         margin: 0;
 
     }
-    .footer-contact img {
-        width: 20px;
-        margin: 0;
-        padding: 0;
+    .footer-info {
+        display: block;
+        color: white;
+        padding: 15px;
     }
-    .tel {
-        margin-top: 10px;
+    .footer-info p {
+        padding: 0;
+        margin: 0;
+
+    }
+    .footer-icons img {
+        margin: 10px;
+        height: 30px;
+        width: 30px;
+    }
+    .wrapper {
+        min-height: 100%;
+    }
+    .push {
+        height: 100px;
+    }
+    .footer-icons {
+        text-align: right;
     }
 }
