@@ -38,6 +38,7 @@ function showProduct(aProduct){
  clone.querySelector(".more").href="subpage.html?id=" + aProduct.id;
  clone.querySelector(".name-product").textContent = aProduct.title.rendered;
  clone.querySelector(".img-post").src = aProduct.acf.image.sizes.medium;
+    clone.querySelector(".size").textContent = "SIZE: " + aProduct.acf.size;
 clone.querySelector(".number").textContent = aProduct.acf.price + " DKK";
 
     if (aProduct.acf.availability == false){
