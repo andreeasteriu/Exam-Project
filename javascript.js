@@ -41,7 +41,7 @@ function showProduct(aProduct){
 clone.querySelector(".number").textContent = aProduct.acf.price + " DKK";
 
     if (aProduct.acf.availability == false){
-       clone.querySelector(".item").classList.add('opacity');
+       clone.querySelector(".model").classList.add('opacity');
         clone.querySelector(".sold_out").innerHTML = "SOLD OUT";
     };
 

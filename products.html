@@ -8,35 +8,91 @@
 </head>
 
 <body>
+<main>
+    <header class="no-bg">
+
+        <!--------NAVIGATION--------->
+
+        <span onclick="openNav()" class="burger-menu">&#9776;</span>
+        <nav id="mainnav" class="main-nav">
+            <div class="x-group"><a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+                <ul>
+                    <li><a href="#shop"><b>SHOP</b></a></li>
+
+                    <li class="subli"><a href="">T-shirts</a></li>
+                    <li class="subli"><a href="">Pillows</a></li>
+                    <li class="subli"><a href="">Leggings</a></li>
+                    <li class="subli"><a href="">Acrylic blocks</a></li>
+                    <li class="subli"><a href="">Framed prints</a></li>
+                    <li class="subli"><a href="">Phone cases</a></li>
+
+                    <li><a href=""><b>BLOG</b></a></li>
+                    <li><a href=""><b>CONTACT</b></a>
+                        <li><a href=""><b>MY CART</b></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!----------MAIN----------------->
+
+
 
 <section id="category">
     <template id="template">
+    <a class="more" href="subpage.html?id=1">
     <article class="item">
        <div class="model">
 
-           <a class="more" href="subpage.html?id=1">
 
-           <h2><span class="name-product">Name of the product</span></h2>
+<img class="img-post" src="" alt="">
+           <h2 class="item-title"><span class="name-product">Name of the product</span></h2>
 
-       <p class="price">PRICE: <span class="number"></span></p>
-               <p class="sold_out"></p>
-
+       <p class="price"> <span class="number"></span></p>
 
 
-       <img class="img-post" src="" alt="">
-     </a>
+
+
+
+
+
 </div>
+     <p class="sold_out"></p>
     </article>
-
+</a>
  </template>
     </section>
 
-
+<div class="wrapper">
+            <div class="push"></div>
+        </div>
 
 <!----------FOOTER----------------->
-<footer>
+ <footer class="footer">
+            <div class="footer-contact">
+                <p><b>Contact</b></p>
+                <p>arina.voropayeva@gmail.com</p>
+                <p>+45 56 36 12 98</p>
+            </div>
+            <div class="footer-info">
+                <p>Return and exchange policy</p>
+                <p>Privacy policy</p>
+                <p>Terms of service</p>
+            </div>
+            <div class="footer-icons">
+                <img src="assets/facebook.png" alt="facebook-icon">
+                <img src="assets/instagram.png" alt="instagram-icon">
+                <img src="assets/pinterest.png" alt="pinteres-icon">
+                <img src="assets/youtube.png" alt="youtube-icon">
+            </div>
+        </footer>
 
-</footer>
+    </main>
 
 
     <script src="javascript.js"></script>
