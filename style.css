@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
 }
@@ -369,6 +368,10 @@ p {
     font-size: 14px;
 
 }
+.go-cart {
+    display: none;
+}
+
 
 button.read {
     color: green;
@@ -438,17 +441,81 @@ p.soldout-sub {
 
 
 
+/*************** contact page **********************/
+.contact-us-p {
+    text-align: center;
+    margin: 15px;
+}
+.contact-us {
+    text-align: center;
+    margin: 20px;
+    padding-top: 20px;
+}
+.contact-us-name {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: gray;
+    margin: 20px;
+    padding: 5px;
+}
+.contact-us-e-mail {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: gray;
+    margin: 20px;
+    padding: 5px;
+}
+.contact-us-subject {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: gray;
+    margin: 20px;
+    padding: 5px;
+}
+.contact-us-message {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: gray;
+    margin: 20px;
+    padding: 5px;
+    padding-bottom: 100px;
+}
+.contact-us-send-button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 
 
+}
+.contact-us-icons, .contact-us-find-me {
+    display: none;
+}
+
+.contact-us-send-button {
+        display: block;
+        background: #5fd9b9;
+        background-image: linear-gradient(to bottom, #5fd9b9, #1c735c);
+        border-radius: 4px;
+          font-family: Arial;
+          color: #ffffff;
+        font-size: 14px;
+      padding: 6px 30px 6px 30px;
+      text-decoration: none;
+    }
+
+    .contact-us-send-button:hover {
+  background: #5fd9b9;
+        background-image: linear-gradient(to bottom, #5fd9b9, #48c7a5);
+  text-decoration: none;
+    }
 /******************* FOOTER ********************/
 
 footer {
-    position: absolute;
-    text-align: center;
     background-color: #0A251E;
-    min-width: 100vw;
-    height: 45px;
-    margin-top: 10%;
+    text-align: center;
+    margin-top:  1.5em;
+    bottom: 0;
+    position: relative;
 }
 .footer-icons {
     display: inline-flex;
@@ -466,13 +533,10 @@ footer {
     display: none;
 }
 
-.go-cart {
+.wrapper, .push {
     display: none;
 }
 
- .wrapper {
-        min-height: 1%;
-    }
 
 
 /****************** TABLET **************************/
@@ -553,15 +617,14 @@ footer {
         position: absolute;
         bottom: 1em;
         right: 1em;
-      background: #5fd9b9;
+        background: #5fd9b9;
         background-image: linear-gradient(to bottom, #5fd9b9, #1c735c);
         border-radius: 4px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 14px;
-  padding: 6px 15px 6px 15px;
-  text-decoration: none;
-        z-index: 1;
+          font-family: Arial;
+          color: #ffffff;
+        font-size: 14px;
+      padding: 6px 15px 6px 15px;
+      text-decoration: none;
     }
 
     .go-cart:hover {
@@ -574,27 +637,29 @@ footer {
       font-size: 14px;
     }
 
-    /******** FOOTER ********/
 
-
-
-
-    .footer{
-       height: 3em;
-
+    /********** contact page *************/
+    .contact-page {
+        max-width: 500px;
+        width: 100%;
+        min-height: 100%;
+        margin-right: auto;
+        margin-left: auto;
     }
+
+
 /***************** desktop ***********************/
 
 @media only screen and (min-width:50em) {
     header {
         display: block;
-    background-image: url(assets/city_1920x660.png.png);
-    background-size: cover;
+        background-image: url(assets/city_1920x660.png.png);
+        background-size: cover;
         height: 80vh;
         background-attachment: fixed;
         background-repeat: no-repeat;
-    background-position: top;
-    width: 100%;
+        background-position: top;
+        width: 100%;
 
     }
 
@@ -668,7 +733,7 @@ footer {
         grid-template-columns: repeat(12, 1fr);
         grid-auto-rows: 8em;
         margin-top: 5em;
-        padding-bottom: 2em;
+
         grid-gap: 1em;
         max-width: 1300px !important;
         width: 100%;
@@ -796,22 +861,22 @@ footer {
         color: #FFF;
     }
 
-/****** PRODUCTS PAGE ********/
+    /****** PRODUCTS PAGE ********/
     header.no-bg {
-    background-image: ;
-    height: 0;
-}
+        background-image: ;
+        height: 0;
+    }
 
     #category {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
-    grid-auto-rows: 17em;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+        grid-auto-rows: 17em;
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
         grid-row-gap: 0;
         grid-column-gap: 2em;
-}
+    }
 
     .model {
         padding: 1em 1em;
@@ -821,57 +886,66 @@ footer {
         width: 39.5%;
         left: 7%;
     }
-    /******************* FOOTER ********************/
-.footer {
-        text-align: left;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    padding: 20px;
-        height: 150px;
-
-
+    /************** contact page *************/
+    .contact-us {
+        margin: 10px;
+        padding-top: 80px;
+    }
+    .contact-page {
+        max-width: 700px;
+        width: 100%;
+        min-height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .contact-us-find-me {
+        display: block;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    .contact-us-icons {
+        display: inline-flex;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .contact-us-icons img {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
     }
 
+    /******************* FOOTER ********************/
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 3.5em;
+    }
     .footer-contact {
         display: block;
         color: white;
-        padding: .5em;
-    }
-    .footer-contact p {
-        padding: 0;
-        margin: 0;
-
+        padding: .4em;
+        text-align: left;
     }
     .footer-info {
         display: block;
         color: white;
-        padding: .5em;
+        padding: .4em;
+        text-align: left;
+        padding-left: 3.5em;
     }
-    .footer-info p {
-        padding: 0;
-        margin: 0;
-
-    }
-
-    .footer-icons img {
-        margin: 10px;
-        height: 30px;
-        width: 30px;
-    }
-    .wrapper {
-        min-height: 100%;
-    }
-    .push {
-        height: 100px;
-    }
-
     .footer-icons {
         text-align: right;
-        margin: 0;
-        grid-column-start: 4;
+    }
+    .wrapper {
+        display: block;
 
     }
-
-
-
+    .push {
+        display: block;
+        height: 30vh;
+    }
 }
