@@ -923,17 +923,18 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding-left: 3.5em;
+        padding-bottom: 2em;
     }
     .footer-contact {
         display: block;
         color: white;
-        padding: .4em;
+        padding: 1em;
         text-align: left;
     }
     .footer-info {
         display: block;
         color: white;
-        padding: .4em;
+        padding: 1em;
         text-align: left;
         padding-left: 3.5em;
     }
