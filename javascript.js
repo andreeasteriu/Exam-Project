@@ -65,16 +65,16 @@ function showSinglePost(anItem){
     console.log(anItem);
 
 
- document.querySelector(".name-product").textContent = anItem.title.rendered;
+ document.querySelector(".name-sub").textContent = anItem.title.rendered;
 
 document.querySelector(".desc").innerHTML = anItem.content.rendered;
 
-document.querySelector(".img-post").src = anItem.acf.image.sizes.medium;
+document.querySelector(".img-sub").src = anItem.acf.image.sizes.medium;
 
-    document.querySelector(".number").textContent = anItem.acf.price+ " DKK";
-    document.querySelector(".size").textContent = "SIZE: " + anItem.acf.size;
+    document.querySelector(".number-sub").textContent = anItem.acf.price+ " DKK";
+    document.querySelector(".size-sub").textContent = "Size: " + anItem.acf.size;
     if (anItem.acf.availability == false){
-        document.querySelector(".sold_out").innerHTML = "SOLD OUT";
+        document.querySelector(".soldout-sub").innerHTML = "SOLD OUT";
     };
 }
 
