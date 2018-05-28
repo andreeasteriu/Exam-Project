@@ -321,6 +321,17 @@ position: absolute;
     color: #FFF;
     background-color: rgba(0, 0, 0, 0.5);
 }
+/******* SUBPAGE PRODUCTS *******/
+
+.img-sub {
+    width: 20em;
+}
+
+.name-sub {
+
+}
+
+
 
 
 /******************* FOOTER ********************/
@@ -352,6 +363,10 @@ footer {
 .go-cart {
     display: none;
 }
+
+ .wrapper {
+        min-height: 1%;
+    }
 
 
 /****************** TABLET **************************/
@@ -388,7 +403,7 @@ footer {
     #category {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(27em, 1fr));
-    grid-auto-rows: 14em;
+    grid-auto-rows: 15em;
     max-width: 600px;
     margin: auto;
     padding: 20px;
