@@ -451,7 +451,6 @@ p.soldout-sub {
 
 .to-cart {
     display: block;
-
     margin-left: auto;
       background: #5fd9b9;
         background-image: linear-gradient(to bottom, #5fd9b9, #1c735c);
@@ -478,7 +477,7 @@ margin-left: 2em;
   text-decoration: none;
 }
 
-.btn:hover {
+.back:hover {
   background: #2e4554;
   background-image: linear-gradient(to bottom, #2e4554, #526571);
   text-decoration: none;
@@ -848,28 +847,64 @@ footer {
     margin: 1.5em;
     text-align: center;
     position: relative;
-
     margin: auto;
-    padding: 20px;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
+
+
+    .subpage-item1 {
+        grid-column-start: 2;
+
+    }
+
+    .subpage-item2 {
+        grid-row-start: 1;
+        position: relative;
+    }
+
+    .subpage-item3 {
+        grid-column-start: 2;
+        margin-top: 5em;
+        position: absolute;
+        padding: 0 1em;
+    }
+
 
     .size-dropdown {
         width: 80%;
         margin: auto;
+        margin-top: 2em;
+           max-width: 600px;
     }
 
     .to-cart {
         margin: auto;
         margin-top: 2em;
+        width: 80%;
+        padding: 10px;
+        text-transform: uppercase;
     }
 
     .img-sub {
         width: 100%;
     }
 
-    .wrapper-img {
-        height: 400px;
-        overflow: hidden;
+    .desc {
+        max-width: 500px;
+        margin: auto;
+        padding: 1em;
+        height: 90px;
+    }
+
+    .price-sub {
+         font-size: 21px;
+        top: 0;
+    }
+
+    .h2-sub {
+        padding-top: 1em;
     }
 
 
