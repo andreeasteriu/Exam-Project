@@ -331,14 +331,9 @@ position: absolute;
 /******* SUBPAGE PRODUCTS *******/
 
 .subpage-margin {
-    margin: 1em;
+    margin: 1.5em;
     text-align: center;
-    border: 1px solid;
-    padding: .5em;
     position: relative;
-
-
-
 }
 
 .img-sub {
@@ -348,6 +343,8 @@ position: absolute;
 .h2-sub {
     font-size: 24px;
     margin: 0 0 .5em;
+   font-weight: bolder;
+
 }
 
 .desc {
@@ -356,18 +353,55 @@ position: absolute;
     font-weight: 500;
     overflow: hidden;
   height: 76px;
-    margin: 0;
+    margin: 1.5em .5em 2em;
 }
 
 p {
     margin: 0;
 }
-.size-sub {
+
+
+
+#select-size {
+   font-size: 16px;
+    width: 100%;
+}
+
+
+
+.size-dropdown {
+    border: 2px solid ;
+   margin: .5em 0 1.5em;
+    width: 100%;
+    padding: 6px 10px;
+    position: relative;
+
+    font-family: "Muli", sans-serif;
     text-align: left;
-    margin: 1.5em 0 1em;
-    font-size: 14px;
 
 }
+
+.show {
+    display: block;
+}
+
+
+.hide {
+    display: none;
+}
+
+
+
+.open-arrow {
+    float: right;
+  position: absolute;
+    right: 1em;
+    top: 1em;
+    margin: 0;
+    padding: 0;
+     font-size: 10px;
+}
+
 .go-cart {
     display: none;
 }
@@ -375,11 +409,12 @@ p {
 
 button.read {
     color: green;
+    font-weight: bold;
     position: absolute;
     right: 0;
     bottom: 0;
     font-family: "Lato", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     border:none;
     background-color: #ededed;
 box-shadow: -26px 0px 68px 26px rgba(237,237,237,1);
@@ -393,11 +428,11 @@ box-shadow: -26px 0px 68px 26px rgba(237,237,237,1);
    margin: 2em 0;
     font-family: "Muli",sans-serif;
     position: absolute;
-    top: 0;
+    top: 2em;
     right: 0;
     background-color: #526571;
     color: #FFF;
-    padding: .1em 1em;
+    padding: .2em 1em;
 
 
 }
@@ -412,30 +447,41 @@ p.soldout-sub {
     color: #FFF;
     width: 100%;
 
-
 }
 
 .to-cart {
 
     display: block;
-    margin: auto;
+    margin-left: auto;
       background: #5fd9b9;
         background-image: linear-gradient(to bottom, #5fd9b9, #1c735c);
         border-radius: 4px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   padding: 6px 15px 6px 15px;
   text-decoration: none;
     border: none;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 
 }
 
 .back {
-
+margin-left: 2em;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  background: #526571;
+  padding: 6px 10px 6px 10px;
+  text-decoration: none;
 }
 
+.btn:hover {
+  background: #2e4554;
+  background-image: linear-gradient(to bottom, #2e4554, #526571);
+  text-decoration: none;
+}
 
 
 
@@ -647,6 +693,36 @@ footer {
         margin-left: auto;
     }
 
+
+    /******* SUBPAGE PRODUCTS *******/
+
+.subpage-margin {
+    margin: 1.5em;
+    text-align: center;
+    position: relative;
+
+    margin: auto;
+    padding: 20px;
+}
+
+    .size-dropdown {
+        width: 80%;
+        margin: auto;
+    }
+
+    .to-cart {
+        margin: auto;
+        margin-top: 2em;
+    }
+
+    .img-sub {
+        width: 100%;
+    }
+
+    .wrapper-img {
+        height: 400px;
+        overflow: hidden;
+    }
 
 /***************** desktop ***********************/
 

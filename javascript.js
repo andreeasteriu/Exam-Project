@@ -16,6 +16,7 @@ function closeNav() {
 
 }
 
+
 let urlParams= new URLSearchParams(window.location.search);
 
 let categories = urlParams.get("categories");
@@ -69,12 +70,26 @@ function showSinglePost(anItem){
 
 document.querySelector(".desc").innerHTML = anItem.content.rendered;
 
-document.querySelector(".img-sub").src = anItem.acf.image.sizes.medium;
+document.querySelector(".img-sub").src = anItem.acf.image.sizes.large;
 
     document.querySelector(".number-sub").textContent = anItem.acf.price+ " DKK";
-    document.querySelector(".size-sub").textContent = "Size: " + anItem.acf.size;
+    document.querySelector(".size-sub").textContent = anItem.acf.size;
     if (anItem.acf.availability == false){
         document.querySelector(".soldout-sub").innerHTML = "SOLD OUT";
     };
+}
+
+document.querySelector('.read').addEventListener('click', function() {
+  document.querySelector('.desc').style.height= 'auto';
+  this.style.display= 'none';
+});
+
+function back() {
+    window.history.back();
+}
+
+
+function sizeDropDown() {
+    document.querySelector(".open-arrow").classList.toggle("hide");
 }
 
