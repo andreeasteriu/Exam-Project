@@ -1317,6 +1317,20 @@ footer {
             color: #FFF;
         }
 
+
+          /******** BLOG PAGE ********/
+
+
+        .blog-header-img {
+          background-image: url(assets/city_1920x660.png.png);
+        }
+
+
+
+
+
+
+
         /****** PRODUCTS PAGE ********/
         header.no-bg {
             background-image: ;
