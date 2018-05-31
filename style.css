@@ -675,10 +675,12 @@ contact-us-send-button:hover {
 }
 .my-cart-input-number {
     text-align: center;
-    margin: auto;
     background-color: #eee;
     border-radius: 5px;
     border: 1px solid darkgray;
+    padding: 2px 0;
+    width: 60px;
+    margin: auto;
 }
 
 .my-cart-item2 {
@@ -1035,7 +1037,7 @@ footer {
 
     }
     .my-cart-input-number {
-        padding: 0;
+        padding: 2px 20px;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
@@ -1043,6 +1045,7 @@ footer {
         border-radius: 5px;
         border: 1px solid darkgray;
         margin-top: 30px;
+        text-align: right;
     }
     .wrapper-my-cart-total-grid {
         display: block;
