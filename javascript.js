@@ -69,7 +69,7 @@ function showSinglePost(anItem){
  document.querySelector(".name-sub").textContent = anItem.title.rendered;
 
 document.querySelector(".desc").innerHTML = anItem.content.rendered;
-
+document.querySelector(".material").textContent = anItem.acf.material;
 document.querySelector(".img-sub").src = anItem.acf.image.sizes.large;
 
     document.querySelector(".number-sub").textContent = anItem.acf.price+ " DKK";
