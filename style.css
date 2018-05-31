@@ -522,6 +522,10 @@ p.soldout-sub {
     text-align: center;
     margin: 15px;
 }
+.contact-page {
+    margin:auto;
+    width: 80%;
+}
 
 .contact-us {
     text-align: center;
@@ -533,33 +537,36 @@ p.soldout-sub {
     border: 1px solid black;
     border-radius: 5px;
     color: gray;
-    margin: 20px;
+    margin-bottom: 10px;
     padding: 5px;
+    width: 100%;
 }
 
 .contact-us-e-mail {
     border: 1px solid black;
     border-radius: 5px;
     color: gray;
-    margin: 20px;
+    margin-bottom: 10px;
     padding: 5px;
+    width: 100%;
 }
 
 .contact-us-subject {
     border: 1px solid black;
     border-radius: 5px;
     color: gray;
-    margin: 20px;
+    margin-bottom: 10px;
     padding: 5px;
+    width: 100%;
 }
-
 .contact-us-message {
     border: 1px solid black;
     border-radius: 5px;
     color: gray;
-    margin: 20px;
+    margin-bottom: 20px;
     padding: 5px;
     padding-bottom: 100px;
+    width: 100%;
 }
 
 .contact-us-send-button {
@@ -900,7 +907,24 @@ footer {
         margin-right: auto;
         margin-left: auto;
     }
-
+    .contact-us {
+        margin-bottom: 30px;
+    }
+    .contact-us-p {
+        margin-bottom: 30px;
+    }
+    .contact-us-name {
+        margin-bottom: 30px;
+    }
+    .contact-us-e-mail {
+        margin-bottom: 30px;
+    }
+    .contact-us-subject {
+        margin-bottom: 30px;
+    }
+    .contact-us-message {
+        margin-bottom: 30px;
+    }
 
 
     /******* SUBPAGE PRODUCTS *******/
@@ -1071,6 +1095,7 @@ footer {
         min-height: 100%;
         margin-right: auto;
         margin-left: auto;
+
     }
 
 
@@ -1395,6 +1420,15 @@ footer {
 
 
 
+
+        /*********** contact page ***********/
+        .contact-us-send-button {
+            margin-bottom: 30px;
+        }
+        .contact-us-inputs {
+            max-width: 500px;
+            margin: auto;
+        }
 
         /*************** my cart page ******************/
         .my-cart-items {
