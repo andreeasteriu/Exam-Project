@@ -1450,11 +1450,10 @@ footer {
 
 
         /******************* FOOTER ********************/
-        footer {
+        .footer {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             padding-left: 3.5em;
-            padding-bottom: 2em;
         }
         .footer-contact {
             display: block;
@@ -1471,6 +1470,10 @@ footer {
         }
         .footer-icons {
             text-align: right;
+        }
+        .footer-icons img {
+            width: 25px;
+            height: 25px;
         }
         .wrapper {
             display: block;
