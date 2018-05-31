@@ -940,6 +940,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         min-height: calc(100vh - 110px);
         grid-auto-rows: 33.5em;
+
     }
 
 
@@ -960,6 +961,7 @@ footer {
         margin-top: 5em;
         position: absolute;
         padding: 1em 2em 0;
+        width: 100%;
     }
 
 
