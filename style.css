@@ -634,13 +634,15 @@ contact-us-send-button:hover {
 }
 
 .my-cart-image1 img {
-    width: 250px;
+    width: 100%;
 }
 
 .my-cart-image2 img {
-    width: 250px;
+    width: 100%;
 }
-
+.my-cart-quantity {
+    display: none;
+}
 .my-cart-head-title {
     text-align: center;
 }
@@ -659,42 +661,9 @@ contact-us-send-button:hover {
     text-align: center;
     margin-bottom: 2em;
 }
-
-.my-cart-minus-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 15px;
-    margin-top: .2em;
-}
-
-.my-cart-plus-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 15px;
-    margin-top: .2em;
-}
-
 .my-cart-number {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.my-cart-number1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.my-cart-number2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.my-cart-one {
-    text-align: center;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .my-cart-price1 {
@@ -704,7 +673,13 @@ contact-us-send-button:hover {
     padding: .5em;
     margin: .5em;
 }
-
+.my-cart-input-number {
+    text-align: center;
+    margin: auto;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+}
 
 .my-cart-item2 {
     border-bottom: 1px solid;
@@ -1059,6 +1034,16 @@ footer {
         padding-right: 0;
 
     }
+    .my-cart-input-number {
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #eee;
+        border-radius: 5px;
+        border: 1px solid darkgray;
+        margin-top: 30px;
+    }
     .wrapper-my-cart-total-grid {
         display: block;
     }
@@ -1074,6 +1059,7 @@ footer {
     }
     .my-cart-number {
         margin-top: 3em;
+        position: relative;
     }
     .my-cart-info1 {
         margin-top: 2em;
@@ -1122,7 +1108,10 @@ footer {
         margin-left: auto;
 
     }
-
+    .my-cart-quantity {
+        display: block;
+        font-family: "Muli", sans-serif;
+}
 
     /********** BLOG PAGE ***************/
 
