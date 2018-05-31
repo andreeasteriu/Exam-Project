@@ -73,7 +73,17 @@ document.querySelector(".material").textContent = anItem.acf.material;
 document.querySelector(".img-sub").src = anItem.acf.image.sizes.large;
 
     document.querySelector(".number-sub").textContent = anItem.acf.price+ " DKK";
-    document.querySelector(".size-sub").textContent = anItem.acf.size;
+
+    console.log(anItem.acf.size.split(","));
+
+    let aOptions = anItem.acf.size.split(",");
+    var i;
+    for (i = 0; i < aOptions.length; i++) {
+        document.querySelector("#select-size").innerHTML += '<option>' + aOptions[i] + '</option>';
+    }
+    console.log(aOptions.length);
+
+
     if (anItem.acf.availability == false){
         document.querySelector(".soldout-sub").innerHTML = "SOLD OUT";
     };
