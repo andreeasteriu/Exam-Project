@@ -266,6 +266,7 @@ header {
     font-weight: 500;
     margin: 15px 0;
     text-align: center;
+    margin-top: 50%;
 
 }
 
@@ -321,7 +322,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    background-color:#085A5B;
+    background-color: #085A5B;
     margin: 0;
     padding: 5px;
     color: #FFF;
@@ -338,6 +339,25 @@ header {
     color: #FFF;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+/*********** BLOG PAGE *************/
+
+.heading-title-blog {
+    text-align: center;
+    margin-top: 45%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-blog {
+    margin: 0 15px;
+}
+
+.img-blog {
+    display: block;
+    width: 100%;
+}
+
 
 /******* SUBPAGE PRODUCTS *******/
 
@@ -370,7 +390,7 @@ header {
 
 .sub-material {
     font-size: 16px;
-    padding-bottom:  1em;
+    padding-bottom: 1em;
     text-align: left;
     font-family: "Muli", sans-serif;
 }
@@ -480,11 +500,11 @@ p.soldout-sub {
     text-decoration: none;
     border: none;
     margin-bottom: .5em;
-     margin: auto;
-        margin-top: .5em;
-        width: 100%;
-        padding: 10px;
-        text-transform: uppercase;
+    margin: auto;
+    margin-top: .5em;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
 }
 
 .to-cart:hover {
@@ -511,7 +531,7 @@ p.soldout-sub {
 }
 
 .move-right {
-   text-align: right;
+    text-align: right;
 }
 
 
@@ -522,8 +542,9 @@ p.soldout-sub {
     text-align: center;
     margin: 15px;
 }
+
 .contact-page {
-    margin:auto;
+    margin: auto;
     width: 80%;
 }
 
@@ -559,6 +580,7 @@ p.soldout-sub {
     padding: 5px;
     width: 100%;
 }
+
 .contact-us-message {
     border: 1px solid black;
     border-radius: 5px;
@@ -1000,13 +1022,13 @@ footer {
     }
 
     .sub-material {
-         font-size: 16px;
-    padding-top: 1em;
+        font-size: 16px;
+        padding-top: 1em;
     }
 
     .move-right {
-     text-align: right;
-    padding-top: 1em;
+        text-align: right;
+        padding-top: 1em;
     }
 
     .back {
@@ -1102,400 +1124,421 @@ footer {
     }
 
 
-
-
-
-    /***************** desktop ***********************/
-    @media only screen and (min-width:50em) {
-        header {
-            display: block;
-            background-image: url(assets/art-ball-blur-298823.jpg);
-            background-size:cover;
-            height: 80vh;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: top;
-            width: 100%;
-
-        }
-
-        .head {
-            display: none;
-        }
-
-        .top-text {
-            position: absolute;
-            z-index: ;
-            top: 25%;
-            line-height: 80px;
-            border-width: 3px;
-            z-index: 1;
-            font-size: 7vh;
-            padding: .2em;
-        }
-
-        .heading-title {
-            display: none;
-        }
-
-
-
-        /********** NAVIGATION *********/
-        label {
-            display: none;
-        }
-
-        .burger-menu {
-            display: none;
-        }
-
-        #mainnav ul {
-            display: inline-flex;
-
-            width: 100%;
-            padding-left: 30px;
-            padding-top: 0;
-            position: fixed;
-            background-color: rgba(10, 37, 30, 0.9);
-            float: right;
-        }
-
-
-        #mainnav li {
-
-            border-bottom: none;
-            padding-top: 20px;
-            font-size: 16px;
-            padding-left: 2em;
-
-        }
-
-
-        .subli {
-            display: none;
-        }
-
-
-        /********* MAIN ************/
-        .down-arrow {
-            display: block;
-            margin: auto;
-            margin-bottom: 10em;
-        }
-
-        /***** PRODUCTS-TYPE *****/
-        .container {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-auto-rows: 8em;
-            margin-top: 5em;
-
-            grid-gap: 1em;
-            max-width: 1300px !important;
-            width: 100%;
-            min-height: 100%;
-            margin-right: auto;
-            margin-left: auto;
-
-
-        }
-        .first {
-            grid-area: 1/ span 4;
-            grid-row: 1/ span 4;
-            background-image: url(assets/phone-case.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .second {
-            background-image: url(assets/flip-flops.jpg);
-            grid-area: 1/ span 4;
-            grid-row: 1/ span 2;
-            background-position: left;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-
-        .third {
-            background-image: url(assets/pillows.jpg);
-            grid-area: 1/ span 4;
-            grid-row: 1/ span 3;
-            background-position: left;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .fourth {
-            background-image: url(assets/prints.jpg);
-            grid-area: 5/ span 4;
-            grid-row: 3/ span 2;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .fifth {
-            background-image: url(assets/acrylic.png);
-            grid-area: 1/ span 8;
-            grid-row: 5/ span 2;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .sixth {
-            background-image: url(assets/swimwear.jpg);
-            grid-area: 9/ span 4;
-            grid-row: 4/ span 3;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .seventh {
-            background-image: url(assets/tote-bag.jpeg);
-            grid-area: 1/ span 4;
-            grid-row: 7/ span 3;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .eighth {
-            background-image: url(assets/t-shirts.jpg);
-            grid-area: 5/ span 4;
-            grid-row: 7/ span 3;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .ninth {
-            background-image: url(assets/wallpaper.png);
-            grid-area: 9/ span 4;
-            grid-row: 7/ span 3;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .product {
-            background-color: lightgray;
-            transition: 0.25s ease-in-out;
-        }
-
-        .product:hover {
-            transition: 0.25s ease-in-out;
-        }
-
-        .product-type {
-            background-color: rgba(0, 0, 0, 0.5);
-            height: 100%;
-            position: relative;
-
-
-        }
-
-        .product-type:hover {
-            background-color: rgba(0, 0, 0, 0.3);
-
-        }
-
-        .type-title {
-            margin: 0;
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%);
-            font-size: 35px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #FFF;
-        }
-
-
-          /******** BLOG PAGE ********/
-
-
-        .blog-header-img {
-          background-image: url(assets/city_1920x660.png.png);
-        }
+    /********** BLOG PAGE ***************/
 
 
 
 
 
 
-
-        /****** PRODUCTS PAGE ********/
-        header.no-bg {
-            background-image: ;
-            height: 0;
-        }
-
-        #category {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
-            grid-auto-rows: 17em;
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-            grid-row-gap: 0;
-            grid-column-gap: 2em;
-        }
-
-        .model {
-            padding: 1em 1em;
-        }
-
-        .sold_out {
-            width: 39.5%;
-            left: 7%;
-        }
-
-        .price {
-            margin-top: 1em;
-        }
-        /************** contact page *************/
-        .contact-us {
-            margin: 10px;
-            padding-top: 80px;
-        }
-        .contact-page {
-            max-width: 700px;
-            width: 100%;
-            min-height: 100%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        .contact-us-find-me {
-            display: block;
-            text-align: center;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-        }
-        .contact-us-icons {
-            display: inline-flex;
-            position: relative;
-            left: 50%;
-            transform: translate(-50%);
-        }
-        .contact-us-icons img {
-            width: 40px;
-            height: 40px;
-            margin: 10px;
-        }
+}
 
 
-/******* SUBPAGE PRODUCTS *******/
+
+/***************** desktop ***********************/
+
+@media only screen and (min-width:50em) {
+
+
+    header {
+        display: block;
+        background-image: url(assets/art-ball-blur-298823.jpg);
+        background-size: cover;
+        height: 80vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top;
+        width: 100%;
+
+    }
+
+    .head {
+        display: none;
+    }
+
+    .top-text {
+        position: absolute;
+        z-index: ;
+        top: 25%;
+        line-height: 80px;
+        border-width: 3px;
+        z-index: 1;
+        font-size: 7vh;
+        padding: .2em;
+    }
+
+    .heading-title {
+        display: none;
+    }
+
+
+
+    /********** NAVIGATION *********/
+    label {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    #mainnav ul {
+        display: inline-flex;
+
+        width: 100%;
+        padding-left: 30px;
+        padding-top: 0;
+        position: fixed;
+        background-color: rgba(10, 37, 30, 0.9);
+        float: right;
+    }
+
+
+    #mainnav li {
+
+        border-bottom: none;
+        padding-top: 20px;
+        font-size: 16px;
+        padding-left: 2em;
+
+    }
+
+
+    .subli {
+        display: none;
+    }
+
+
+    /********* MAIN ************/
+    .down-arrow {
+        display: block;
+        margin: auto;
+        margin-bottom: 10em;
+    }
+
+    /***** PRODUCTS-TYPE *****/
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: 8em;
+        margin-top: 5em;
+
+        grid-gap: 1em;
+        max-width: 1300px !important;
+        width: 100%;
+        min-height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+
+
+    }
+    .first {
+        grid-area: 1/ span 4;
+        grid-row: 1/ span 4;
+        background-image: url(assets/phone-case.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .second {
+        background-image: url(assets/flip-flops.jpg);
+        grid-area: 1/ span 4;
+        grid-row: 1/ span 2;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .third {
+        background-image: url(assets/pillows.jpg);
+        grid-area: 1/ span 4;
+        grid-row: 1/ span 3;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .fourth {
+        background-image: url(assets/prints.jpg);
+        grid-area: 5/ span 4;
+        grid-row: 3/ span 2;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .fifth {
+        background-image: url(assets/acrylic.png);
+        grid-area: 1/ span 8;
+        grid-row: 5/ span 2;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .sixth {
+        background-image: url(assets/swimwear.jpg);
+        grid-area: 9/ span 4;
+        grid-row: 4/ span 3;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .seventh {
+        background-image: url(assets/tote-bag.jpeg);
+        grid-area: 1/ span 4;
+        grid-row: 7/ span 3;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .eighth {
+        background-image: url(assets/t-shirts.jpg);
+        grid-area: 5/ span 4;
+        grid-row: 7/ span 3;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .ninth {
+        background-image: url(assets/wallpaper.png);
+        grid-area: 9/ span 4;
+        grid-row: 7/ span 3;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .product {
+        background-color: lightgray;
+        transition: 0.25s ease-in-out;
+    }
+
+    .product:hover {
+        transition: 0.25s ease-in-out;
+    }
+
+    .product-type {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        position: relative;
+
+
+    }
+
+    .product-type:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+
+    }
+
+    .type-title {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFF;
+    }
+
+
+
+
+
+
+
+
+    /****** PRODUCTS PAGE ********/
+    header.no-bg {
+        background-image: ;
+        height: 0;
+    }
+
+    #category {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+        grid-auto-rows: 17em;
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+        grid-row-gap: 0;
+        grid-column-gap: 2em;
+    }
+
+    .model {
+        padding: 1em 1em;
+    }
+
+    .sold_out {
+        width: 39.5%;
+        left: 7%;
+    }
+
+    .price {
+        margin-top: 1em;
+    }
+    /************** contact page *************/
+    .contact-us {
+        margin: 10px;
+        padding-top: 80px;
+    }
+    .contact-page {
+        max-width: 700px;
+        width: 100%;
+        min-height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .contact-us-find-me {
+        display: block;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    .contact-us-icons {
+        display: inline-flex;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .contact-us-icons img {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+
+
+    /******* SUBPAGE PRODUCTS *******/
     .subpage-margin {
         max-width: 1200px;
         margin-top: 7em;
     }
 
-        .subpage-item3 {
-          left: 1em;
-           padding: 4em 6em;
+    .subpage-item3 {
+        left: 1em;
+        padding: 4em 6em;
 
-        }
-
-        .subpage-item1 {
-            background: #eee;
-            position: relative;
-            margin: 0 2em 0 4em;
-            box-shadow: 3px 6px 28px 0px rgba(0,0,0,0.75);
-        }
-
-
-        .price-sub {
-
-            font-size: 24px
-        }
-
-        .h2-sub {
-            background: #526571;
-            color: #FFF;
-            margin: 0;
-            padding: 1em
-        }
-
-        .size-dropdown {
-            border: none;
-            padding: 0;
-            margin: 1em auto 2em 0;
-            width: 6em;
-        }
-
-        .open-arrow {
-            display: none;
-        }
-
-        select {
-            padding: 10px;
-        }
-
-
-
-
-        /*********** contact page ***********/
-        .contact-us-send-button {
-            margin-bottom: 30px;
-        }
-        .contact-us-inputs {
-            max-width: 500px;
-            margin: auto;
-        }
-
-        /*************** my cart page ******************/
-        .my-cart-items {
-            max-width: 800px;
-            width: 100%;
-            min-height: 100%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        .my-cart-head-title {
-            padding-top: 2em;
-        }
-
-
-        /******************* FOOTER ********************/
-        .footer {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            padding-left: 3.5em;
-        }
-        .footer-contact {
-            display: block;
-            color: white;
-            padding: 1em;
-            text-align: left;
-        }
-        .footer-info {
-            display: block;
-            color: white;
-            padding: 1em;
-            text-align: left;
-            padding-left: 3.5em;
-        }
-        .footer-icons {
-            text-align: right;
-        }
-        .footer-icons img {
-            width: 25px;
-            height: 25px;
-        }
-        .wrapper {
-            display: block;
-
-        }
-        .push {
-            display: block;
-            height: 30vh;
-        }
     }
+
+    .subpage-item1 {
+        background: #eee;
+        position: relative;
+        margin: 0 2em 0 4em;
+        box-shadow: 3px 6px 28px 0px rgba(0, 0, 0, 0.75);
+    }
+
+
+    .price-sub {
+
+        font-size: 24px
+    }
+
+    .h2-sub {
+        background: #526571;
+        color: #FFF;
+        margin: 0;
+        padding: 1em
+    }
+
+    .size-dropdown {
+        border: none;
+        padding: 0;
+        margin: 1em auto 2em 0;
+        width: 6em;
+    }
+
+    .open-arrow {
+        display: none;
+    }
+
+    select {
+        padding: 10px;
+    }
+
+
+
+
+    /*********** contact page ***********/
+    .contact-us-send-button {
+        margin-bottom: 30px;
+    }
+    .contact-us-inputs {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    /*************** my cart page ******************/
+    .my-cart-items {
+        max-width: 800px;
+        width: 100%;
+        min-height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .my-cart-head-title {
+        padding-top: 2em;
+    }
+
+    /******** BLOG PAGE ********/
+    .main-blog {
+        margin-top: 0;
+    }
+
+
+    .blog-header-img {
+        background-image: url(assets/city_1920x660.png.png);
+    }
+
+
+
+
+
+
+
+
+
+    /******************* FOOTER ********************/
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 3.5em;
+    }
+    .footer-contact {
+        display: block;
+        color: white;
+        padding: 1em;
+        text-align: left;
+    }
+    .footer-info {
+        display: block;
+        color: white;
+        padding: 1em;
+        text-align: left;
+        padding-left: 3.5em;
+    }
+    .footer-icons {
+        text-align: right;
+    }
+    .footer-icons img {
+        width: 25px;
+        height: 25px;
+    }
+    .wrapper {
+        display: block;
+
+    }
+    .push {
+        display: block;
+        height: 30vh;
+    }
+}

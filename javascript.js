@@ -21,7 +21,8 @@ let urlParams= new URLSearchParams(window.location.search);
 
 let categories = urlParams.get("categories");
 console.log("I want to get the category: " + categories);
-function fetchMusic(){
+
+function fetchProducts(){
 fetch("http://deckadev.com/wordpress/wp-json/wp/v2/shop?categories=" + categories)
 .then(e=>e.json())
 .then(showProductType)
@@ -51,7 +52,40 @@ clone.querySelector(".number").textContent = aProduct.acf.price + " DKK";
     category.appendChild(clone);
 
 }
-fetchMusic();
+fetchProducts();
+
+
+
+function fetchBlogs(){
+fetch("http://deckadev.com/wordpress/wp-json/wp/v2/blog?categories=" + categories)
+.then(e=>e.json())
+.then(showBlogPosts)
+}
+
+function showBlogPosts(data){
+    console.log(data);
+    data.forEach(showBlogs)
+}
+
+function showBlogs(aBlogPost) {
+    console.log(aBlogPost);
+    let templateBlog = document.querySelector('#blog-template').content;
+    let cloneBlog = templateBlog.cloneNode(true);
+
+cloneBlog.querySelector('.img-blog').src = aBlogPost.acf.image.sizes.medium;
+cloneBlog.querySelector('.title-blog').textContent = aBlogPost.title.rendered;
+cloneBlog.querySelector('.description-blog').innerHTML = aBlogPost.content.rendered;
+
+let blog = document.querySelector("#blog-category");
+    blog.appendChild(cloneBlog);
+}
+
+fetchBlogs();
+
+
+
+
+
 
 
 
