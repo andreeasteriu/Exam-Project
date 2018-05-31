@@ -821,6 +821,7 @@ footer {
     /******** PRODUCTS PAGE *********/
     .size {
         display: block;
+        padding-bottom: 1em;
     }
 
 
@@ -845,11 +846,11 @@ footer {
     .item-title {
         font-size: 21px;
         text-align: left;
-        padding: 0;
+        padding: 0 0 .5em 0;
     }
 
     .text-cell {
-        padding: 2em 1em;
+        padding: 2em 0 2em 1em;
     }
 
     .price {
@@ -1314,6 +1315,15 @@ footer {
             width: 39.5%;
             left: 7%;
         }
+
+        .item-title {
+            padding-bottom: 1em;
+        }
+
+
+
+
+
         /************** contact page *************/
         .contact-us {
             margin: 10px;
