@@ -289,6 +289,11 @@ header {
 
 }
 
+
+.text-main {
+    text-align: left;
+}
+
 /******* PRODUCTS PAGE ********/
 
 .size {
@@ -305,6 +310,7 @@ header {
 .item {
     position: relative;
 }
+
 
 .img-post {
     width: 100%;
@@ -818,6 +824,7 @@ footer {
     h1.heading-title {
         font-size: 25px;
         margin: 1em 0;
+        margin-top: 50%;
     }
 
     p.type-title {
@@ -1364,10 +1371,15 @@ footer {
         padding: 20px;
         grid-row-gap: 0;
         grid-column-gap: 2em;
+        margin-top: 50%;
     }
 
     .model {
         padding: 1em 1em;
+    }
+
+     .model:hover {
+        background: #eee;
     }
 
     .sold_out {
