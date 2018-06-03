@@ -29,6 +29,7 @@ fetch("http://deckadev.com/wordpress/wp-json/wp/v2/shop?categories=" + categorie
 }
 
 
+
 function showProductType(data){
     console.log(data);
     data.forEach(showProduct)
@@ -37,6 +38,7 @@ function showProduct(aProduct){
     console.log(aProduct);
     let template = document.querySelector("#template").content;
     let clone = template.cloneNode(true);
+
  clone.querySelector(".more").href="subpage.html?id=" + aProduct.id;
  clone.querySelector(".name-product").textContent = aProduct.title.rendered;
  clone.querySelector(".img-post").src = aProduct.acf.image.sizes.medium;
@@ -54,6 +56,25 @@ clone.querySelector(".number").textContent = aProduct.acf.price + " DKK";
 }
 fetchProducts();
 
+
+
+function productTypeHeadings() {
+    fetch("http://deckadev.com/wordpress/wp-json/wp/v2/categories?" + categories)
+.then(e=>e.json())
+.then(showTitles)
+}
+
+function showTitles(titles) {
+    console.log(titles);
+    titles.forEach(showMeTitle)
+}
+
+function showMeTitle (aTitle){
+    let heading = document.querySelector('home').content;
+    aTitle.forEach (id=95){
+        document.querySelector('.product-type-heading').textContent = aTitle.name;
+        }
+}
 
 
 function fetchBlogs(){
