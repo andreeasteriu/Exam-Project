@@ -350,7 +350,7 @@ header {
 
 .heading-title-blog {
     text-align: center;
-    margin-top: 45%;
+    margin-top: 50%;
     font-size: 20px;
     font-weight: 500;
 }
@@ -363,8 +363,17 @@ header {
     display: block;
     width: 100%;
 }
-
-
+.blog-post {
+    border: 1px solid darkgray;
+    margin-top: 1em;
+}
+.title-blog {
+    padding: .5em;
+    margin: 0;
+}
+.description-blog {
+    padding: .5em;
+}
 /******* SUBPAGE PRODUCTS *******/
 
 .subpage-margin {
@@ -1125,9 +1134,20 @@ footer {
 
     /********** BLOG PAGE ***************/
 
-
-
-
+    .blog-post {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 2em;
+        box-shadow: 6px 6px 27px 0px rgba(94,153,116,1);
+        margin-top: 3em;
+    }
+    .img-blog {
+        width: 100%;
+    }
+    .title-description-blog {
+        padding: .5em;
+        padding-left: 2em;
+    }
 
 
 }
