@@ -1198,11 +1198,9 @@ footer {
     p.text-main {
         right: 0;
     }
-
-    .heading-title {
-        display: none;
+    h1.heading-title {
+        margin-top: 0;
     }
-
 
 
     /********** NAVIGATION *********/
