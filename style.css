@@ -1142,8 +1142,9 @@ footer {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 2em;
-        box-shadow: 6px 6px 27px 0px rgba(94,153,116,1);
+        box-shadow: 6px 6px 27px 0px rgba(0,0,0,0.75);
         margin-top: 3em;
+        margin-bottom: 1em;
     }
     .img-blog {
         width: 100%;
@@ -1152,11 +1153,15 @@ footer {
         padding: .5em;
         padding-left: 2em;
     }
-
+    .title-blog {
+        padding-bottom: .5em;
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-top: 0;
+    }
 
 
 }
-
 
 
 /***************** desktop ***********************/
@@ -1559,8 +1564,17 @@ footer {
         background-image: url(assets/city_1920x660.png.png);
     }
 
-
-
+/****************** BLOG PAGE *****************/
+    .heading-title-blog {
+        margin-top: 0;
+    }
+    .blog-post {
+        max-width: 700px;
+        width: 100%;
+        min-height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
 
 
