@@ -57,9 +57,9 @@ clone.querySelector(".number").textContent = aProduct.acf.price + " DKK";
 fetchProducts();
 
 
-
-function productTypeHeadings() {
-    fetch("http://deckadev.com/wordpress/wp-json/wp/v2/categories?" + categories)
+/*
+function fetchProductType() {
+    fetch("http://deckadev.com/wordpress/wp-json/wp/v2/categories?")
 .then(e=>e.json())
 .then(showTitles)
 }
@@ -70,12 +70,19 @@ function showTitles(titles) {
 }
 
 function showMeTitle (aTitle){
-    let heading = document.querySelector('home').content;
-    aTitle.forEach (id=95){
-        document.querySelector('.product-type-heading').textContent = aTitle.name;
+    console.log(aTitle);
+    let parentElement = document.querySelector("#title-products").content;
+    aTitle.forEach (item =>{
+        if (item.id === 59) {
+            console.log(item);
+            let header = document.querySelector(".product-type-heading");
+            header.textContent = item.name;
+            parentElement.appendChild(header);
         }
+        })
 }
 
+fetchProductType();*/
 
 function fetchBlogs(){
 fetch("http://deckadev.com/wordpress/wp-json/wp/v2/blog?categories=" + categories)
@@ -160,3 +167,22 @@ function sizeDropDown() {
     document.querySelector(".open-arrow").classList.toggle("hide");
 }
 
+
+/*function slideDown() {
+let anchor = document.querySelector('.')
+addEventListener('click', padMe);
+
+
+    function padMe(e) {
+
+        semTarget.forEach((a) => {
+            a.classList.remove('padMe')
+        })
+        let link = this.getAttribute("href");
+        let cont = document.querySelector(link);
+        console.log(cont)
+        if (link != "#shop") {
+            cont.classList.add('padMe')
+        }
+}
+*/
