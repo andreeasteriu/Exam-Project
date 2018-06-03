@@ -1560,7 +1560,10 @@ footer {
     .main-blog {
         margin-top: 0;
     }
-
+    .heading-title-blog {
+        padding-top: 90px;
+        margin-bottom: 0;
+    }
 
     .blog-header-img {
         background-image: url(assets/city_1920x660.png.png);
