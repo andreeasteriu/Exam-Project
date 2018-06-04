@@ -57,32 +57,6 @@ clone.querySelector(".number").textContent = aProduct.acf.price + " DKK";
 fetchProducts();
 
 
-/*
-function fetchProductType() {
-    fetch("http://deckadev.com/wordpress/wp-json/wp/v2/categories?")
-.then(e=>e.json())
-.then(showTitles)
-}
-
-function showTitles(titles) {
-    console.log(titles);
-    titles.forEach(showMeTitle)
-}
-
-function showMeTitle (aTitle){
-    console.log(aTitle);
-    let parentElement = document.querySelector("#title-products").content;
-    aTitle.forEach (item =>{
-        if (item.id === 59) {
-            console.log(item);
-            let header = document.querySelector(".product-type-heading");
-            header.textContent = item.name;
-            parentElement.appendChild(header);
-        }
-        })
-}
-
-fetchProductType();*/
 
 function fetchBlogs(){
 fetch("http://deckadev.com/wordpress/wp-json/wp/v2/blog?categories=" + categories)
