@@ -168,21 +168,3 @@ function sizeDropDown() {
 }
 
 
-/*function slideDown() {
-let anchor = document.querySelector('.')
-addEventListener('click', padMe);
-
-
-    function padMe(e) {
-
-        semTarget.forEach((a) => {
-            a.classList.remove('padMe')
-        })
-        let link = this.getAttribute("href");
-        let cont = document.querySelector(link);
-        console.log(cont)
-        if (link != "#shop") {
-            cont.classList.add('padMe')
-        }
-}
-*/
